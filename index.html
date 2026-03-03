@@ -31,18 +31,15 @@
             animation: pulse 2s infinite;
         }
 
+        #visit-box img {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.08);
-            }
-
-            100% {
-                transform: scale(1);
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
@@ -52,18 +49,10 @@
     <h1>🔥 Website của bạn</h1>
 
     <div id="visit-box">
-        Lượt truy cập: <span id="counter">Đang tải...</span>
+        Lượt truy cập:
+        <img src="https://hits.sh/sourcenguyen-star.github.io/website-counter.svg?style=flat-square&label=visits&color=ff512f" />
     </div>
 
-<div id="visit-box">
-  Lượt truy cập:
-  <img src="https://hits.sh/sourcenguyen-star.github.io/website-counter.svg?style=flat-square&label=visits" />
-</div>
 </body>
 
 </html>
-
-
-
-
-
