@@ -55,23 +55,14 @@
         Lượt truy cập: <span id="counter">Đang tải...</span>
     </div>
 
-<script>
-async function updateCounter() {
-    try {
-        const response = await fetch("https://api.allorigins.win/raw?url=https://api.countapi.xyz/hit/source-nguyen-2026abc/visits");
-        const data = await response.json();
-        document.getElementById("counter").innerText = data.value;
-    } catch (error) {
-        console.error(error);
-        document.getElementById("counter").innerText = "Lỗi API!";
-    }
-}
-
-updateCounter();
-</script>
+<div id="visit-box">
+  Lượt truy cập:
+  <img src="https://hits.sh/sourcenguyen-star.github.io/website-counter.svg?style=flat-square&label=visits" />
+</div>
 </body>
 
 </html>
+
 
 
 
